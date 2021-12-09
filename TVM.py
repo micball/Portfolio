@@ -7,6 +7,7 @@ fv = 0
 n = 0
 n3 = 0
 print('Welcome to the TVM Calculator - this is just a project for me to figure out a slightly more complex program.')
+print('As it currently stands, this program exclusively calculates interest growth on funds, no debt payment calculator.')
 print('This TVM Calculator was built by Michael.')
 while pv == 'potato' :
     try:
