@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta lang='en'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Recipe Submit Form</title>
+  </header>
+  <body>
+    <h1 id="title">Submit Your Recipe Here</h1>
+    <div class="subtitle">
+      <p id='description'>Thanks for adding your favorite recipies to our database!</p>
+    </div>
+      <form id="survey-form">
+        <article>
+          <label id='name-label'>Name</label>
+          <br>
+          <input id='name' type="text" required placeholder='Enter your name here'>
+        </article>
+        <article>
+          <label id='email-label'>Email</label>
+          <br>
+          <input id='email' type='email' required placeholder='the_chef@thechef.food'>
+        </article>
+        <article class=''>
+          <label id='number-label'>How many does this recipe serve?</label>
+          <br>
+          <input id='number' type='number' min="1" max='10' placeholder='1-10'>
+        </article>
+        <article class='genre'>
+          <label id='dropdown-label'>What kind of recipe is this?</label>
+          <br>
+          <select id='dropdown'>
+            <option disabled selected>Select one of the following: </option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value='Dinner'>Dinner</option>
+            <option value='Dessert'>Dessert</option>
+            <option value='Drink'>Drink</option>
+            <option value='Other'>Other</option>
+          </select>
+        </article>
+        <article class='first-upload'>
+          <p>Is this your first time uploading a recipe?</p><br>
+            <label>
+              <input type='radio' name='first-time' value='true'>It's my first time!
+            </label>
+            <br>
+            <label>
+              <input type='radio' name='first-time' value='false'>Nope, I'm a *seasoned* professional
+            </label>
+        </article>
+        <article class='allegens'>
+          <p>Does your recipe contain any of the following common allergens?</p>
+          <div id="column-left">
+          <label><input type='checkbox' value='milk'>Milk</label> 
+          <label><input type='checkbox' value='eggs'>Eggs</label>
+          <label><input type='checkbox' value='fish'>Fish</label>
+          <label><input type='checkbox' value='shellfish'>Shellfish</label>
+          </div>
+          <div id="column-right">
+          <label><input type='checkbox' value='tree-nuts'>Tree Nuts</label>
+          <label><input type='checkbox' value='peanuts'>Peanuts</label>
+          <label><input type='checkbox' value='wheat'>Wheat</label>
+          <label><input type='checkbox' value='soy'>Soy</label>
+          </div>
+        </article>
+        <article class='submit-button'>
+          <label>Please type your recipe here: </label>
+          <br>
+          <textarea placeholder='Your recipe here:'></textarea>
+          <br>
+        <input type='submit' id='submit'>
+        </article>
+      </form>
+  </body>
+  <footer>
+  </footer>
+</html>
